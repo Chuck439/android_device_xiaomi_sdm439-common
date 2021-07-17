@@ -11,3 +11,6 @@ allow init sysfs_leds:lnk_file r_file_perms;
 # Smart Charging
 allow init sysfs_battery_supply:file { setattr };
 
+# Allow init to read and write to vendor_sysfs_graphics
+allow init vendor_sysfs_graphics:dir search;
+allow init vendor_sysfs_graphics:file rw_file_perms;
