@@ -179,6 +179,10 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
+ifeq ($(subst cherish_,,$(PRODUCT_NAME)),$(PRODUCT_DEVICE))
+-include device/cherish/sepolicy/qcom/sepolicy.mk
+endif
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
