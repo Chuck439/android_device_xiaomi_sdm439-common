@@ -2231,8 +2231,8 @@ case "$target" in
                      # enable governor for perf cluster
                      echo 1 > /sys/devices/system/cpu/cpu0/online
                      echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-                     echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-                     echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+                     echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+                     echo 2000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
 
                      #set the hispeed_freq
                      echo 1497600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
@@ -2247,8 +2247,8 @@ case "$target" in
                      ## enable governor for power cluster
                      echo 1 > /sys/devices/system/cpu/cpu4/online
                      echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-                     echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
-                     echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+                     echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+                     echo 2000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
 
                      #set the hispeed_freq
                      echo 998400 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
@@ -2299,8 +2299,8 @@ case "$target" in
                      # configure schedutil governor settings
                      echo 1 > /sys/devices/system/cpu/cpu0/online
                      echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-                     echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-                     echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+                     echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+                     echo 2000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
 
                      #set the hispeed_freq
                      echo 1305600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
