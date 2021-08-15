@@ -1,0 +1,3 @@
+# Allow xiaomi_settings to read and write to sysfs_vibrator
+get_prop(devicesettings_app, deviceparts_prop)
+set_prop(devicesettings_app, deviceparts_prop)
