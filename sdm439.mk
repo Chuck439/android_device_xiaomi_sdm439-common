@@ -248,8 +248,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.0.vendor
+include $(LOCAL_PATH)/perf/qti-perf.mk
 
 # Power
 PRODUCT_PACKAGES += \
