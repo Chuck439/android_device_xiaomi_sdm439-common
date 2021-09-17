@@ -252,7 +252,6 @@ include $(LOCAL_PATH)/perf/qti-perf.mk
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
     android.hardware.power.stats@1.0-service.mock
 
 PRODUCT_COPY_FILES += \
